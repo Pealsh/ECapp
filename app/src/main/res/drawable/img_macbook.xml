@@ -1,0 +1,30 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="80dp"
+    android:viewportWidth="120"
+    android:viewportHeight="80">
+    <!-- 画面の枠 -->
+    <path
+        android:fillColor="#FF2B2B2E"
+        android:pathData="M18,4h84a4,4 0,0 1,4 4v58h-92v-58a4,4 0,0 1,4 -4z" />
+    <!-- 画面（グラデーション） -->
+    <path android:pathData="M21,8h78v55h-78z">
+        <aapt:attr xmlns:aapt="http://schemas.android.com/aapt" name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="21" android:startY="8"
+                android:endX="99" android:endY="63">
+                <item android:offset="0" android:color="#FF3B5BDB" />
+                <item android:offset="0.5" android:color="#FFE8495F" />
+                <item android:offset="1" android:color="#FFF59F00" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <!-- 本体 -->
+    <path
+        android:fillColor="#FFB0B4BA"
+        android:pathData="M2,66h116v4a4,4 0,0 1,-4 4h-108a4,4 0,0 1,-4 -4z" />
+    <path
+        android:fillColor="#FF8A8F96"
+        android:pathData="M50,66h20v2h-20z" />
+</vector>
